@@ -42,7 +42,7 @@ export const projects = [
     },
     { 
         id:4,
-        title: "Crystpal",
+        title: "CryptPal",
         image: crystpal,
         content: "A crypto app that lets you tag along with latest market trends, news and prices.",
         mobileImg: cmobile,

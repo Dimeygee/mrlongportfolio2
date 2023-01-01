@@ -17,8 +17,12 @@ export const Contact = () => {
             </Motion>
             <Motion>
                 <div className="md:w-[709px] flex flex-col gap-[15px]">
-                    <div className="px-[20px] break-all md:px-[40px] py-[25px] border-[1px] dark:text-white border-[#E2E8F0] rounded-[25px] text-[22px] md:text-[26px] font-bold font-syne text-[#1A202C]">odebiyiridwan@gmail.com</div>
-                    <div className="px-[20px] break-all md:px-[40px] py-[25px] dark:text-white border-[1px] border-[#E2E8F0] rounded-[25px] text-[22px] md:text-[26px] font-bold font-syne text-[#1A202C]">+2348106855544</div>
+                    <a href="mailto:odebiyiridwan@gmail.com">
+                        <div className="px-[20px] break-all md:px-[40px] py-[25px] border-[1px] dark:text-white border-[#E2E8F0] rounded-[25px] text-[22px] md:text-[26px] font-bold font-syne text-[#1A202C]">odebiyiridwan@gmail.com</div>
+                    </a>
+                    <a href="tel:+2348106855544">
+                        <div className="px-[20px] break-all md:px-[40px] py-[25px] dark:text-white border-[1px] border-[#E2E8F0] rounded-[25px] text-[22px] md:text-[26px] font-bold font-syne text-[#1A202C]">+2348106855544</div>
+                    </a>
                 </div>
             </Motion>
         </section>
