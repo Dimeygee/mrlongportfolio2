@@ -1,18 +1,299 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
+  scroll-behaviour:smooth;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
 }
+
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
+:root{
+  --mrlongblue: #2F80ED;
+}
+
+
 * {
   box-sizing: border-box;
+}
+
+.about_img{
+  background-image: url('https://res.cloudinary.com/dimejiscloud/image/upload/v1672127584/Image_2_wmouwx.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.overlay{
+  filter: blur(4px);
+}
+
+.mrlong{
+  background-image: url('https://res.cloudinary.com/dimejiscloud/image/upload/v1669638914/mrlongwiththepose_cufhyc.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+
+.navlink{
+  font-weight: 500;
+}
+
+.navlink.active,
+.footer li .navlink.active{
+  color:var(--mrlongblue);
+  position: relative;
+  font-weight: 700;
+}
+
+.navlink.active::before,
+.footer li .navlink.active::before{
+  content:"";
+  position: absolute;
+  background-color:var(--mrlongblue);
+  width:4px;
+  height: 4px;
+  border-radius: 100%;
+  left: -15px;
+  top:45%;
+}
+
+.navlink.active > span:hover,
+.footer li .navlink.active > span:hover,
+.navlink.active::before > span:hover,
+.footer li .navlink.active::before > span:hover{
+  color:#2F80ED;
+}
+
+.navlink.dark_active,
+.footer li .navlink.dark_active{
+  color:white;
+  position: relative;
+  font-weight: 700;
+}
+
+.navlink.dark_active::before,
+.footer li .navlink.dark_active::before{
+  content:"";
+  position: absolute;
+  background-color:white;
+  width:4px;
+  height: 4px;
+  border-radius: 100%;
+  left: -15px;
+  top:45%;
+}
+
+.footer li .navlink{
+  color: #A0AEC0;
+}
+
+.work{
+  border:1px solid #2F80ED;
+  margin-bottom: 16px;
+}
+
+.name{
+  -webkit-text-stroke:2px black;
+  color:#0496FF;
+}
+
+.btn_container button{
+  outline:none;
+  border-radius: 28px;
+  background-color: rgb(247, 250, 252, 0.1);
+}
+
+.btn_container button.light{
+  border:2px solid rgb(47, 128, 237, 0.1);
+  color:#2F80ED;
+}
+
+.name span{
+  color: black;
+}
+
+.loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
+}
+#percent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  color: white;    
+  font-size: 150px;
+  font-weight: lighter;
+  font-style: italic;
+  mix-blend-mode: difference;
+}
+#bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+#barconfirm{
+  width: 0%;
+  height: 100vh;
+  background: #1b1b1b;
+}
+.main-page{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.content{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #1b1b1b;
+  flex-direction: column;
+  color: white;
+  overflow: hidden;
+  z-index: 50;
+}
+.content h1{
+  font-size: 100px;
+  font-family: 'Monument';
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+/*LOADER*/
+
+body {
+  background: #000;
+}
+
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 60px;
+  margin: -30px 0 0 -40px;
+}
+.preloader .lines {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+.preloader .lines .line {
+  width: 80px;
+  height: 10px;
+  position: absolute;
+  clip: rect(0, 0, 20px, 0);
+}
+.preloader .lines .line.line-1 {
+  top: 0;
+  animation: slide 2s ease 0s infinite;
+}
+.preloader .lines .line.line-2 {
+  top: 15px;
+  animation: slide 2s ease 0.25s infinite;
+}
+.preloader .lines .line.line-3 {
+  top: 30px;
+  animation: slide 2s ease 0.5s infinite;
+}
+.preloader .loading-text {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  width: 100%;
+  font-size: 13px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  line-height: 10px;
+  height: 10px;
+  animation: fade 1s ease 0s infinite;
+}
+
+@keyframes slide {
+  0% {
+    clip: rect(0, 0, 20px, 0);
+  }
+  30% {
+    clip: rect(0, 80px, 20px, 0);
+  }
+  50% {
+    clip: rect(0, 80px, 20px, 0);
+  }
+  80% {
+    clip: rect(0, 80px, 20px, 80px);
+  }
+  100% {
+    clip: rect(0, 80px, 20px, 80px);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width:540px){
+
+  .navlink.active::before, .footer li .navlink.active::before{
+    display: none;
+  }
+
+  .navlink.dark_active::before, .footer li .navlink.dark_active::before{
+    display: none;
+  }
+
+  .mrlong{
+    background-position: center;
+  }
+
+  .about_img{
+    background-image: url('https://res.cloudinary.com/dimejiscloud/image/upload/v1672134238/Image_1_mugrcb.png');
+  }
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +302,11 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background:  #2D3748;
   }
+
 }
+
+
+
+
