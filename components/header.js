@@ -35,6 +35,7 @@ export const Header = () => {
                     </p>
                     <p className='p2 hidden md:block mt-[18px] mb-[34px] tracking-[-0.36px] text-[#2D3748] opacity-0 translate-y-4 text-md font-outfit text-center md:text-left font-normal leading-[25px] dark:text-[#CBD5E0]'>Do you have a billion-dollar idea and are looking for a product <br />designer to help bring it to life? If so, you would definitely need to <br className="block sm:hidden" />speak with me.</p>
                     <p className='p2 block  md:hidden mt-[18px] mb-[34px] tracking-[-0.36px] text-[#2D3748] opacity-0 translate-y-4 text-md font-outfit text-center md:text-left font-normal leading-[25px] dark:text-[#CBD5E0]'>Do you have a billion-dollar idea and are looking for a product designer to help bring it to life? If so, you would definitely need to speak with me.</p>
+                    
                     <div className="btn flex gap-[24px] md:flex-row flex-col md:w-[100%] opacity-0 translate-y-4 w-[250px] mx-auto">
                             <Button text="View resume" bgcolor="#2F80ED" color="white" px="40px" py="15px" fontWeight="700" ifDark resume={true} />
                             <Button text="Send me a mail" color="#2F80ED" px="32px" py="15px" fontWeight="700" mail={true} />
