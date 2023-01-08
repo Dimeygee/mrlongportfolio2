@@ -58,7 +58,7 @@ export const MenuNav = () => {
                         })}
                     </ul>
                     <span className="btn_container opacity-0 translate-y-4 inline-block">
-                        <a href="../assets/OdebiyiRidwanResume.pdf" target="__blank">
+                        <a href="https://drive.google.com/file/d/1i5lbNrE9w8ntnTjrmXIykeV2a7VBJrKR/view?usp=share_link" target="__blank">
                             <button className={`border-[#2F80ED] border-solid font-[700] py-[15px] transition duration-[0.5s] border-opacity-10 rounded-[28px] hover:text-[#F7FAFC] hover:bg-[#2F80ED] dark:hover:bg-[#F7FAFC] dark:hover:text-[#1A202C] text-[#2F80ED] dark:text-[#F7FAFC] hover: text-base text-center font-outfit tracking-[-0.36px] border-2 border-mrlongblue dark:border-transparent px-[36px] border-opacity-10 font-outfit`}
                                 >View resume
                             </button>
