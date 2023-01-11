@@ -7,7 +7,7 @@ import { MenuContext } from "./context/menucontext"
 export const Loader = () => {
 
     useEffect(() => {
-        tl.to('.loader', { yPercent: -100, delay: 3, duration: Infinity})
+        tl.to('.loader', { yPercent: -100, delay: 3})
     },[])
 
 
