@@ -7,12 +7,12 @@ import { MenuContext } from "./context/menucontext"
 export const Loader = () => {
 
     useEffect(() => {
-        tl.to('.loader', { yPercent: -100, delay: 3})
+        tl.to('.loader', { yPercent: -100, delay: 3, duration: Infinity})
     },[])
 
 
     return(
-        <div className="loader fixed top-0 bottom-0 right-0 left-0 bg-[#FAFCFF] dark:bg-[#2D3748] z-20 flex items-center justify-center">
+        <div className="loader fixed top-0 bottom-0 right-0 left-0 bg-[#FAFCFF] h-[100vh] dark:bg-[#2D3748] z-20 flex items-center justify-center">
             <div className="preloader">
             <div className="lines">
                 <div className="line line-1 bg-[#0083FF]"></div>

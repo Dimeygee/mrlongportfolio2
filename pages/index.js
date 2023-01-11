@@ -13,6 +13,7 @@ export default function Home() {
     <div >
       <Head>
           <link rel="preload" as="image" href="https://res.cloudinary.com/dimejiscloud/image/upload/v1669638914/mrlongwiththepose_cufhyc.png" />
+          <title>Odebiyi Ridwan Portfolio</title>
       </Head>
       <Loader />
       <Header />
