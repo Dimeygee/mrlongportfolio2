@@ -32,8 +32,8 @@ export const Button = ({ color, bgcolor, text, px, py, opacity, fontWeight, ifDa
 
     const ResumeBtn = isDark ? (<a
     style={darkStyle} 
-    className="transition duration-[0.5s] border-opacity-10 rounded-[28px] bg-[#F7FAFC] hover:bg-[#1A202C] hover:text-[#F7FAFC] text-[#1A202C] text-center text-base font-outfit tracking-[-0.36px] border-2 border-mrlongblue dark:border-transparent`" href="https://drive.google.com/file/d/1i5lbNrE9w8ntnTjrmXIykeV2a7VBJrKR/view?usp=share_link" target="__blank">{text}</a>) : (
-    <a style={style}  className="transition duration-[0.5s] border-opacity-10 bg-[#2F80ED] hover:bg-[#F7FAFC] text-[#fff] hover:text-[#2F80ED] rounded-[28px] text-center text-base font-outfit tracking-[-0.36px] border-2 border-mrlongblue dark:border-transparent`" href="https://drive.google.com/file/d/1i5lbNrE9w8ntnTjrmXIykeV2a7VBJrKR/view?usp=share_link" target="__blank">{text}</a>
+    className="transition duration-[0.5s] border-opacity-10 rounded-[28px] bg-[#F7FAFC] hover:bg-[#1A202C] hover:text-[#F7FAFC] text-[#1A202C] text-center text-base font-outfit tracking-[-0.36px] border-2 border-mrlongblue dark:border-transparent`"href="https://drive.google.com/file/d/16fqDXfA6MLHMgaQ3JT7rMU9YUBUVcz4-/view?usp=sharing " target="__blank" download>{text}</a>) : (
+    <a style={style} className="transition duration-[0.5s] border-opacity-10 bg-[#2F80ED] hover:bg-[#F7FAFC] text-[#fff] hover:text-[#2F80ED] rounded-[28px] text-center text-base font-outfit tracking-[-0.36px] border-2 border-mrlongblue dark:border-transparent`" href="https://drive.google.com/file/d/16fqDXfA6MLHMgaQ3JT7rMU9YUBUVcz4-/view?usp=sharing " target="__blank" download>{text}</a>
     )
 
     const MailBtn = isDark ? (
